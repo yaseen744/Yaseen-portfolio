@@ -1,0 +1,119 @@
+.about__grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 70px;
+  align-items: start;
+}
+
+/* ---------- Hexagon photo frame ---------- */
+.hex-frame {
+  position: relative;
+  width: 280px;
+  height: 310px;
+  margin: 0 auto;
+}
+
+.hex-glow {
+  position: absolute;
+  inset: -14px;
+  clip-path: polygon(25% 2%, 75% 2%, 100% 50%, 75% 98%, 25% 98%, 0% 50%);
+  background: conic-gradient(
+    from 0deg,
+    var(--teal),
+    transparent 35%,
+    transparent 65%,
+    var(--teal)
+  );
+  filter: blur(10px);
+  animation: hex-spin 6s linear infinite;
+  opacity: 0.85;
+}
+
+@keyframes hex-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hex-clip {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  overflow: hidden;
+  background: var(--navy-light);
+}
+
+.hex-clip img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(15%) contrast(1.05);
+  transition: filter var(--transition);
+}
+
+.hex-frame:hover .hex-clip img {
+  filter: grayscale(0%) contrast(1.1);
+}
+
+/* ---------- Text column ---------- */
+.about__para {
+  color: var(--slate);
+  margin-bottom: 18px;
+  font-size: 1.02rem;
+}
+
+.about__cv-btn {
+  margin-top: 12px;
+  margin-bottom: 50px;
+}
+
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.stat-box {
+  background: var(--navy-light);
+  border: 1px solid var(--navy-lighter);
+  border-radius: 10px;
+  padding: 26px 16px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.stat-box:hover {
+  transform: translateY(-6px);
+  border-color: var(--teal);
+  box-shadow: var(--shadow-glow);
+}
+
+.stat-box h3 {
+  font-size: 2rem;
+  color: var(--teal);
+  margin-bottom: 6px;
+}
+
+.stat-box p {
+  font-size: 0.85rem;
+  color: var(--slate);
+}
+
+@media (max-width: 900px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .hex-frame {
+    width: 220px;
+    height: 245px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stat-row {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}
