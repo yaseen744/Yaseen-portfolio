@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp, FaEnvelope, FaYoutube } from "react-icons/fa";
 import { FiArrowUp } from "react-icons/fi";
 import { personalInfo } from "../config/siteData";
 import "./Footer.css";
@@ -65,6 +65,16 @@ export default function Footer() {
               aria-label="GitHub"
             >
               <FaGithub size={18} />
+            </a>
+          </li>
+          <li>
+            <a
+              href={personalInfo.youtube}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+            >
+              <FaYoutube size={18} />
             </a>
           </li>
         </ul>

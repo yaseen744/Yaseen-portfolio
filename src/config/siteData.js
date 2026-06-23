@@ -16,6 +16,7 @@ export const personalInfo = {
   whatsapp: "https://wa.me/923113404105",
   linkedin: "https://www.linkedin.com/in/yaseen-pirzada-aa6941385/",
   github: "https://github.com/yaseen744",
+  youtube: "http://www.youtube.com/@TechWithYaseenPK",
   resumeUrl: "/resume.pdf", // place your real CV at public/resume.pdf
   photo: "/images/me.jpg",
   about: [
@@ -40,6 +41,8 @@ export const skills = [
   { name: "Git / GitHub", percent: 85, icon: "git" },
   { name: "REST APIs", percent: 75, icon: "api" },
   { name: "MongoDB", percent: 40, icon: "mongodb" },
+  { name: "Netlify", percent: 70, icon: "netlify" },
+  { name: "Vercel", percent: 75, icon: "vercel" },
 ];
 
 export const projects = [
@@ -97,6 +100,17 @@ export const projects = [
     tags: ["React", "REST API", "JavaScript"],
     demo: "https://weather-app2-rose.vercel.app/",
     code: "https://github.com/yaseen744/Weather-App",
+  },
+  {
+    id: 6,
+    title: "Travel Website",
+    description:
+      "A travel-themed website showcasing destinations and trip packages, built with React and a fully responsive, visually engaging layout.",
+    image:
+      "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=900&q=80&auto=format&fit=crop",
+    tags: ["React", "JavaScript", "Responsive Design"],
+    demo: "https://travelpk-website.netlify.app/",
+    code: "https://github.com/yaseen744/Travel-website.git",
   },
 ];
 

@@ -64,7 +64,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.3 }}
         >
           {personalInfo.role}{" "}
-          <span className="accent">| React | Bootstrap | JavaScript</span>
+          <span className="accent">| JavaScript | React | APIs | MongoDB</span>
         </motion.h2>
 
         <motion.p

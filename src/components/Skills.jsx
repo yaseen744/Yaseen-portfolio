@@ -9,6 +9,8 @@ import {
   SiGit,
   SiGithub,
   SiMongodb,
+  SiNetlify,
+  SiVercel,
 } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { skills } from "../config/siteData";
@@ -23,6 +25,8 @@ const ICONS = {
   git: { Icon: SiGit, color: "#F05032" },
   api: { Icon: TbApi, color: "#64FFDA" },
   mongodb: { Icon: SiMongodb, color: "#47A248" },
+  netlify: { Icon: SiNetlify, color: "#00C7B7" },
+  vercel: { Icon: SiVercel, color: "#FFFFFF" },
 };
 
 function TiltCard({ skill }) {
