@@ -26,7 +26,7 @@ export const personalInfo = {
 };
 
 export const stats = [
-  { label: "Projects Completed", value: 50, suffix: "+" },
+  { label: "Projects Completed", value: 20, suffix: "+" },
   { label: "LinkedIn Network", value: 700, suffix: "+" },
   { label: "Years Experience", value: 1, suffix: "+" },
 ];
@@ -70,25 +70,25 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Interactive Web Platform",
+    title: "Real Estate Agency Website",
     description:
-      "A high-performance interactive application built with Vanilla JavaScript, focused on precise DOM manipulation and optimized user interaction flows.",
+      "A modern real estate agency website built with React, featuring property listings, responsive layouts, smooth navigation, and a professional user experience.",
     image:
       "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=900&q=80&auto=format&fit=crop",
-    tags: ["JavaScript", "DOM", "Performance"],
-    demo: "https://lnkd.in/dWjvk4SB",
-    code: "https://lnkd.in/dEYGh4WS",
+    tags: ["React", "JavaScript", "Responsive Design"],
+    demo: "https://estate-agency1.vercel.app/",
+    code: "https://github.com/yaseen744/Estate-agency.git",
   },
   {
     id: 4,
-    title: "Advanced Age Calculator",
+    title: "Muskan Salon Website",
     description:
-      "A precise age-calculation tool that processes date objects and logic in JavaScript, with a clean, user-friendly interface for real-time results.",
+      "A stylish and fully responsive salon website showcasing beauty services, pricing, appointments, and an elegant modern design.",
     image:
       "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=900&q=80&auto=format&fit=crop",
-    tags: ["JavaScript", "CSS", "UI/UX"],
-    demo: "https://lnkd.in/dUh3HKgF",
-    code: "https://lnkd.in/dnQtZaY9",
+    tags: ["React", "JavaScript", "Responsive Design"],
+    demo: "https://muskan-salon.vercel.app",
+    code: "https://github.com/yaseen744/Salon.git",
   },
   {
     id: 5,
@@ -136,12 +136,9 @@ export const services = [
 ];
 
 export const testimonials = [
-  {
-    quote:
-      "A huge thanks to you and the entire team for knocking it out of the park! We really appreciated how you handled the pivots we made mid-process. Your flexibility and creative problem-solving made a world of difference, and the final result is exactly what we were hoping for.",
-    name: "Muzafar Ali",
-    role: "Admin, Global Learning Centre Lakhi",
-  },
+{name:"Ahmed Raza",role:"Business Owner",quote:"Professional work, great communication, and delivered exactly what we needed on time."},
+{name:"Muhammad Hamza",role:"Startup Founder",quote:"Excellent React developer. The website was fast, responsive, and looked fantastic."},
+{name:"Abdul Rehman",role:"Client",quote:"Very satisfied with the final result. Smooth process and high-quality work throughout."},
 ];
 
 export const navLinks = [
