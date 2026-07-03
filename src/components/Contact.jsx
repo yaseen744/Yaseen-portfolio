@@ -69,12 +69,20 @@ export default function Contact() {
     if (!validate()) return;
 
     setStatus("sending");
-    // NOTE: hook this up to a real backend (e.g. EmailJS, Formspree, or
-    // your own API route) — this simulates a network call for now.
     setTimeout(() => {
+      const text =
+        `New project inquiry from portfolio website:\n\n` +
+        `Name: ${form.name}\n` +
+        `Email: ${form.email}\n` +
+        `Message: ${form.message}`;
+      const whatsappUrl = `${personalInfo.whatsapp}?text=${encodeURIComponent(
+        text
+      )}`;
+      window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+
       setStatus("sent");
       setForm({ name: "", email: "", message: "" });
-      setTimeout(() => setStatus("idle"), 4000);
+      setTimeout(() => setStatus("idle"), 5000);
     }, 1100);
   }
 
@@ -143,7 +151,7 @@ export default function Contact() {
                 id="message"
                 name="message"
                 rows={5}
-                placeholder="Tell me a bit about your project..."
+                placeholder="Tell me about the project you'd like me to build..."
                 value={form.message}
                 onChange={handleChange}
                 aria-invalid={!!errors.message}
@@ -183,6 +191,19 @@ export default function Contact() {
                 )}
               </AnimatePresence>
             </button>
+
+            <AnimatePresence>
+              {status === "sent" && (
+                <motion.p
+                  className="contact__success"
+                  initial={{ opacity: 0, y: -8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0 }}
+                >
+                  ✅ Your message has been sent on WhatsApp successfully!
+                </motion.p>
+              )}
+            </AnimatePresence>
           </motion.form>
 
           <motion.div

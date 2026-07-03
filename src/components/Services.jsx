@@ -1,5 +1,15 @@
 import { motion } from "framer-motion";
-import { FiGlobe, FiShoppingCart, FiLayout } from "react-icons/fi";
+import {
+  FiGlobe,
+  FiShoppingCart,
+  FiLayout,
+  FiBookOpen,
+  FiHome,
+  FiUser,
+  FiRefreshCw,
+  FiSmartphone,
+  FiTool,
+} from "react-icons/fi";
 import { services } from "../config/siteData";
 import "./Services.css";
 
@@ -7,6 +17,12 @@ const ICONS = {
   globe: FiGlobe,
   cart: FiShoppingCart,
   layout: FiLayout,
+  academic: FiBookOpen,
+  estate: FiHome,
+  portfolio: FiUser,
+  redesign: FiRefreshCw,
+  responsive: FiSmartphone,
+  maintenance: FiTool,
 };
 
 export default function Services() {

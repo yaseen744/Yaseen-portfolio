@@ -83,18 +83,25 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.6 }}
         >
           <a
-            href="#projects"
-            className="btn btn-glass"
-            onClick={ripple}
-          >
-            View My Work
-          </a>
-          <a
             href="#contact"
             className="btn btn-glass-solid"
             onClick={ripple}
           >
             Hire Me
+          </a>
+          <a
+            href="#projects"
+            className="btn btn-glass"
+            onClick={ripple}
+          >
+            View Projects
+          </a>
+          <a
+            href="#contact"
+            className="btn btn-outline"
+            onClick={ripple}
+          >
+            Get a Free Demo
           </a>
         </motion.div>
       </div>
