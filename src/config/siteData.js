@@ -112,6 +112,35 @@ export const projects = [
     demo: "https://yaseen-luxtable.netlify.app/",
     code: "https://github.com/yaseen744/Velvet-project.git",
   },
+
+,
+  {
+    id: 7,
+    title: "Carewell Clinic Website",
+    description:"Modern clinic website with healthcare services, appointment-focused layout and responsive design.",
+    image:"https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=900&q=80&auto=format&fit=crop",
+    tags:["React","Healthcare","Responsive"],
+    demo:"https://carewell-clinic.netlify.app/",
+    code:"https://github.com/yaseen744/Carewell-clinic.git",
+  },
+  {
+    id: 8,
+    title: "SparkClean Cleaning Website",
+    description:"Professional cleaning service website showcasing services, bookings and company information.",
+    image:"https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=80&auto=format&fit=crop",
+    tags:["React","Business","Responsive"],
+    demo:"https://sparkclean-website.netlify.app/",
+    code:"https://github.com/yaseen744/Sparkclean.git",
+  },
+  {
+    id: 9,
+    title: "Gym Fitness Website",
+    description:"Modern fitness and gym website featuring programs, trainers and membership information.",
+    image:"https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=900&q=80&auto=format&fit=crop",
+    tags:["React","Fitness","Responsive"],
+    demo:"https://gym-fitness-pk.netlify.app/",
+    code:"https://github.com/yaseen744/Gym-Fitness.git",
+  }
 ];
 
 export const services = [
@@ -180,7 +209,7 @@ export const whyHireMe = [
 ];
 
 export const testimonials = [
-{name:"Ahmed Raza",role:"Business Owner",quote:"Professional work, great communication, and delivered exactly what we needed on time."},
+{name:"Muzaffer",role:"Admin, Global Learning Academy",quote:"Yaseen developed our academy website professionally with a clean design, responsive layout, and excellent communication throughout the project."},
 {name:"Muhammad Hamza",role:"Startup Founder",quote:"Excellent React developer. The website was fast, responsive, and looked fantastic."},
 {name:"Abdul Rehman",role:"Client",quote:"Very satisfied with the final result. Smooth process and high-quality work throughout."},
 ];
